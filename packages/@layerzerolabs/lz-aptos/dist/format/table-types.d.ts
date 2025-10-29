@@ -1,0 +1,17 @@
+export declare enum TableType {
+    MODULE_HANDLES = 1,
+    STRUCT_HANDLES = 2,
+    FUNCTION_HANDLES = 3,
+    FUNCTION_INST = 4,
+    SIGNATURES = 5,
+    CONSTANT_POOL = 6,
+    IDENTIFIERS = 7,
+    ADDRESS_IDENTIFIERS = 8,
+    STRUCT_DEFS = 10,
+    STRUCT_DEF_INST = 11,
+    FUNCTION_DEFS = 12,
+    FIELD_HANDLE = 13,
+    FIELD_INST = 14,
+    FRIEND_DECLS = 15,
+    METADATA = 16
+}

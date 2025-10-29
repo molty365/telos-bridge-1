@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TableType = void 0;
+var TableType;
+(function (TableType) {
+    TableType[TableType["MODULE_HANDLES"] = 1] = "MODULE_HANDLES";
+    TableType[TableType["STRUCT_HANDLES"] = 2] = "STRUCT_HANDLES";
+    TableType[TableType["FUNCTION_HANDLES"] = 3] = "FUNCTION_HANDLES";
+    TableType[TableType["FUNCTION_INST"] = 4] = "FUNCTION_INST";
+    TableType[TableType["SIGNATURES"] = 5] = "SIGNATURES";
+    TableType[TableType["CONSTANT_POOL"] = 6] = "CONSTANT_POOL";
+    TableType[TableType["IDENTIFIERS"] = 7] = "IDENTIFIERS";
+    TableType[TableType["ADDRESS_IDENTIFIERS"] = 8] = "ADDRESS_IDENTIFIERS";
+    TableType[TableType["STRUCT_DEFS"] = 10] = "STRUCT_DEFS";
+    TableType[TableType["STRUCT_DEF_INST"] = 11] = "STRUCT_DEF_INST";
+    TableType[TableType["FUNCTION_DEFS"] = 12] = "FUNCTION_DEFS";
+    TableType[TableType["FIELD_HANDLE"] = 13] = "FIELD_HANDLE";
+    TableType[TableType["FIELD_INST"] = 14] = "FIELD_INST";
+    TableType[TableType["FRIEND_DECLS"] = 15] = "FRIEND_DECLS";
+    TableType[TableType["METADATA"] = 16] = "METADATA";
+})(TableType = exports.TableType || (exports.TableType = {}));

@@ -33,7 +33,7 @@
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@layerzerolabs/lz-aptos": "1.0.6",
+    "@layerzerolabs/lz-aptos": "file:./packages/@layerzerolabs/lz-aptos",
     "@layerzerolabs/scan-client": "~0.0.5",
     "@layerzerolabs/sg-sdk": "^0.5.3",
     "@layerzerolabs/ui-app-config": "~0.1.14",
@@ -87,6 +87,6 @@
     "@aptos-labs/wallet-adapter-core": "^2.2.0",
     "@layerzerolabs/lz-sdk": "~0.0.44",
     "@layerzerolabs/sg-sdk": "^0.5.3",
-    "@layerzerolabs/lz-aptos": "1.0.6"
+    "@layerzerolabs/lz-aptos": "file:./packages/@layerzerolabs/lz-aptos"
   }
 }
