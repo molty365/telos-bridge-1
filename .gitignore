@@ -10,10 +10,10 @@ node_modules
 coverage
 
 # next.js
-.next/
-out/
-build
-dist
+#.next/
+#out/
+#build
+#dist
 
 # misc
 .DS_Store
@@ -41,4 +41,4 @@ yarn-error.log*
 .netrc
 
 # other
-cdk/timescale
+#cdk/timescale
