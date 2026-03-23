@@ -71,7 +71,7 @@
     "mobx-react": "^7.6.0",
     "mobx-utils": "^6.0.6",
     "next": "14.0.1",
-    "p-memoize": "4.0.4",
+    "p-memoize": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-toastify": "^9.1.3",
