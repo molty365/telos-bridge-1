@@ -73,8 +73,9 @@ export function createWallets(chains: ChainId[]): Record<string, Wallet<unknown>
     showQrModal: true,
     optionalChains: evmChains,
     rpcMap: {
+      1: 'https://eth.drpc.org',                              // Ethereum
       [ChainListId.TELOS]: 'https://rpc.telos.net',
-      [ChainListId.POLYGON]: 'https://rpc.ankr.com/polygon',
+      [ChainListId.POLYGON]: 'https://polygon.drpc.org',      // ankr requires API key
       [ChainListId.ARBITRUM]: 'https://arb1.arbitrum.io/rpc',
       [ChainListId.BNB]: 'https://bsc-dataseed.binance.org/',
       [ChainListId.AVALANCHE]: 'https://api.avax.network/ext/bc/C/rpc',
