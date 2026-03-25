@@ -25,9 +25,11 @@ import {appConfig} from '../config';
 
 const queryClient = new QueryClient();
 
-// Override Telos RPC: mainnet.telos.net/evm is deprecated (404)
+// Override RPCs: LZ ui-core defaults contain dead/unreliable endpoints
 const rpcMap = createHttpsRpcMap(NETWORKS, {});
 rpcMap[ChainId.TELOS] = [{url: 'https://rpc.telos.net', timeout: 10000}];
+// poly-rpc.gateway.pokt.network (LZ default) is unreliable — use ankr instead
+rpcMap[ChainId.POLYGON] = [{url: 'https://rpc.ankr.com/polygon', timeout: 10000}];
 
 const failoverProvider = createFailoverProviderFactory(rpcMap);
 const multicallProvider = createMulticallProviderFactory(failoverProvider);
