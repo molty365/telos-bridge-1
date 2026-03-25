@@ -25,11 +25,11 @@ import {appConfig} from '../config';
 
 const queryClient = new QueryClient();
 
-// Override RPCs: LZ ui-core defaults contain dead/unreliable endpoints
+// Override RPCs: LZ ui-core defaults use pokt.network endpoints which are dead without API keys
 const rpcMap = createHttpsRpcMap(NETWORKS, {});
 rpcMap[ChainId.TELOS] = [{url: 'https://rpc.telos.net', timeout: 10000}];
-// poly-rpc.gateway.pokt.network (LZ default) is unreliable — use ankr instead
-rpcMap[ChainId.POLYGON] = [{url: 'https://rpc.ankr.com/polygon', timeout: 10000}];
+rpcMap[ChainId.ETHEREUM] = [{url: 'https://eth.drpc.org', timeout: 10000}];
+rpcMap[ChainId.POLYGON] = [{url: 'https://polygon.drpc.org', timeout: 10000}];
 
 const failoverProvider = createFailoverProviderFactory(rpcMap);
 const multicallProvider = createMulticallProviderFactory(failoverProvider);
